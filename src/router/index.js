@@ -322,19 +322,19 @@ export const asyncRoutes = [
     component: () => import('@/views/pdf/download'),
     hidden: true
   },
-
-  {
-    path: '/theme',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/theme/index'),
-        name: 'Theme',
-        meta: { title: 'Theme', icon: 'theme' }
-      }
-    ]
-  },
+  //
+  // {
+  //   path: '/theme',
+  //   component: Layout,
+  //   children: [
+  //     {
+  //       path: 'index',
+  //       component: () => import('@/views/theme/index'),
+  //       name: 'Theme',
+  //       meta: { title: 'Theme', icon: 'theme' }
+  //     }
+  //   ]
+  // },
 
   {
     path: '/clipboard',
