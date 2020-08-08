@@ -267,33 +267,6 @@ export const asyncRoutes = [
     component: () => import('@/views/pdf/download'),
     hidden: true
   },
-  //
-  // {
-  //   path: '/theme',
-  //   component: Layout,
-  //   children: [
-  //     {
-  //       path: 'index',
-  //       component: () => import('@/views/theme/index'),
-  //       name: 'Theme',
-  //       meta: { title: 'Theme', icon: 'theme' }
-  //     }
-  //   ]
-  // },
-
-  {
-    path: '/clipboard',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        component: () => import('@/views/clipboard/index'),
-        name: 'ClipboardDemo',
-        meta: { title: 'Clipboard', icon: 'clipboard' }
-      }
-    ]
-  },
-
   {
     path: 'external-link',
     component: Layout,
