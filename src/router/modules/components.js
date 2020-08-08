@@ -31,12 +31,6 @@ const componentsRouter = {
       meta: { title: 'Dropzone' }
     },
     {
-      path: 'drag-dialog',
-      component: () => import('@/views/components-demo/drag-dialog'),
-      name: 'DragDialogDemo',
-      meta: { title: 'Drag Dialog' }
-    },
-    {
       path: 'dnd-list',
       component: () => import('@/views/components-demo/dnd-list'),
       name: 'DndListDemo',
