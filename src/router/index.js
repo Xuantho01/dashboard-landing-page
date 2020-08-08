@@ -8,8 +8,9 @@ import Layout from '@/layout'
 
 /* Router Modules */
 import componentsRouter from './modules/components'
-import chartsRouter from './modules/charts'
+// import chartsRouter from './modules/charts'
 import tableRouter from './modules/table'
+
 import nestedRouter from './modules/nested'
 
 /**
@@ -58,16 +59,6 @@ export const constantRoutes = [
   {
     path: '/auth-redirect',
     component: () => import('@/views/login/auth-redirect'),
-    hidden: true
-  },
-  {
-    path: '/404',
-    component: () => import('@/views/error-page/404'),
-    hidden: true
-  },
-  {
-    path: '/401',
-    component: () => import('@/views/error-page/401'),
     hidden: true
   },
   {
@@ -186,7 +177,7 @@ export const asyncRoutes = [
 
   /** when your routing map is too long, you can split it into small modules **/
   componentsRouter,
-  chartsRouter,
+  // chartsRouter,
   nestedRouter,
   tableRouter,
 
@@ -243,21 +234,7 @@ export const asyncRoutes = [
     meta: {
       title: 'Error Pages',
       icon: '404'
-    },
-    children: [
-      {
-        path: '401',
-        component: () => import('@/views/error-page/401'),
-        name: 'Page401',
-        meta: { title: '401', noCache: true }
-      },
-      {
-        path: '404',
-        component: () => import('@/views/error-page/404'),
-        name: 'Page404',
-        meta: { title: '404', noCache: true }
-      }
-    ]
+    }
   },
 
   {
