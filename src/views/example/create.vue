@@ -1,13 +1,13 @@
-<template>
-  <article-detail :is-edit="false" />
-</template>
+<!--<template>-->
+<!--  <article-detail :is-edit="false" />-->
+<!--</template>-->
 
-<script>
-import ArticleDetail from './components/ArticleDetail'
+<!--<script>-->
+<!--import ArticleDetail from './components/ArticleDetail'-->
 
-export default {
-  name: 'CreateArticle',
-  components: { ArticleDetail }
-}
-</script>
+<!--export default {-->
+<!--  name: 'CreateArticle',-->
+<!--  components: { ArticleDetail }-->
+<!--}-->
+<!--</script>-->
 
